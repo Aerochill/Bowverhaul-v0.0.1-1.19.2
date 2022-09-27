@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "bowverhaul:block/infusion_table"
+    }
+  }
+}

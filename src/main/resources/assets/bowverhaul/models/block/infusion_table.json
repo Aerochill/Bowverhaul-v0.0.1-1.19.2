@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures":
+  {
+    "down": "minecraft:block/diorite",
+    "east": "bowverhaul:block/infusion_table_side",
+    "north": "bowverhaul:block/infusion_table_front",
+    "particle": "bowverhaul:block/infusion_table_front",
+    "south": "bowverhaul:block/infusion_table_side",
+    "up": "bowverhaul:block/infusion_table_top",
+    "west": "bowverhaul:block/infusion_table_front"
+  }
+}

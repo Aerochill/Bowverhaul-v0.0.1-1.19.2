@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key":
+  {
+    "#":
+    {
+      "item": "minecraft:diorite"
+    },
+    "Y":
+    {
+      "item": "bowverhaul:diamond_dust"
+    },
+    "S":
+    {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern":
+  [
+    "###",
+    "SYS",
+    "###"
+  ],
+  "result":
+  {
+    "item": "bowverhaul:infusion_table"
+  }
+}

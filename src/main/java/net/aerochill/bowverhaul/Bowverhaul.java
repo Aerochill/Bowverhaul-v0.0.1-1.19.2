@@ -1,6 +1,8 @@
 package net.aerochill.bowverhaul;
 
 import com.mojang.logging.LogUtils;
+import net.aerochill.bowverhaul.block.ModBlocks;
+import net.aerochill.bowverhaul.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -20,6 +22,9 @@ public class Bowverhaul
     public Bowverhaul()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
