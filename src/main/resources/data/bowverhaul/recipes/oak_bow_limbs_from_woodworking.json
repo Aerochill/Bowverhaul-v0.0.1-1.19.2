@@ -1,0 +1,16 @@
+{
+  "type": "bowverhaul:woodworking",
+  "ingredients":
+          [
+            {
+              "item": "minecraft:oak_planks"
+            },
+            {
+              "item": "bowverhaul:whittling_knife"
+            }
+          ],
+  "output":
+  {
+    "item": "bowverhaul:oak_bow_limbs"
+  }
+}

@@ -1,13 +1,12 @@
-package net.aerochill.bowverhaul.item.custom;
+package net.aerochill.bowverhaul.init.item.custom;
 
+import net.aerochill.bowverhaul.init.EntityInit;
+import net.aerochill.bowverhaul.world.entity.projectile.IronTippedArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.projectile.Arrow;
 import net.minecraft.world.item.ArrowItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.NotNull;
 
 public class IronTippedArrowItem extends ArrowItem
 {
@@ -20,10 +19,10 @@ public class IronTippedArrowItem extends ArrowItem
     }
 
     @Override
-    public AbstractArrow createArrow(Level p_40513_, ItemStack p_40514_, LivingEntity p_40515_)
+    public AbstractArrow createArrow(Level level, ItemStack stack, LivingEntity shooter)
     {
-        Arrow arrow = new Arrow(p_40513_, p_40515_);
-        arrow.setBaseDamage(this.damage);
+        IronTippedArrow arrow = new IronTippedArrow(EntityInit.IRON_TIPPED_ARROW.get(), shooter, level);
+        arrow.setBaseDamage(this.damage * 1.5);
         return arrow;
     }
 

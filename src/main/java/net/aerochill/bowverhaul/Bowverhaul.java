@@ -1,8 +1,15 @@
 package net.aerochill.bowverhaul;
 
 import com.mojang.logging.LogUtils;
-import net.aerochill.bowverhaul.block.ModBlocks;
-import net.aerochill.bowverhaul.item.ModItems;
+import net.aerochill.bowverhaul.init.EntityInit;
+import net.aerochill.bowverhaul.init.block.ModBlocks;
+import net.aerochill.bowverhaul.init.block.entity.ModBlockEntities;
+import net.aerochill.bowverhaul.init.effect.ModEffects;
+import net.aerochill.bowverhaul.init.menu.ModMenuTypes;
+import net.aerochill.bowverhaul.init.menu.WoodWorkingTableScreen;
+import net.aerochill.bowverhaul.init.item.ModItems;
+import net.aerochill.bowverhaul.recipe.ModRecipes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,6 +32,11 @@ public class Bowverhaul
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        EntityInit.ENTITY_TYPES.register(modEventBus);
+        ModEffects.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -43,7 +55,7 @@ public class Bowverhaul
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.WOODWORKING_TABLE_MENU.get(), WoodWorkingTableScreen::new);
         }
     }
 }

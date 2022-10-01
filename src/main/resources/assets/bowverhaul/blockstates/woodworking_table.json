@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "bowverhaul:block/woodworking_table"
+    }
+  }
+}

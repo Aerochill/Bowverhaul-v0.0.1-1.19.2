@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values":
+  [
+    "bowverhaul:iron_tipped_arrow",
+    "bowverhaul:diamond_tipped_arrow",
+    "bowverhaul:emerald_tipped_arrow",
+    "bowverhaul:obsidian_tipped_arrow"
+  ]
+}

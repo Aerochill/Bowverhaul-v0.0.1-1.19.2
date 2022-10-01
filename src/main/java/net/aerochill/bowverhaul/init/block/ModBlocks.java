@@ -1,8 +1,9 @@
-package net.aerochill.bowverhaul.block;
+package net.aerochill.bowverhaul.init.block;
 
 import net.aerochill.bowverhaul.Bowverhaul;
-import net.aerochill.bowverhaul.item.ModCreativeModeTab;
-import net.aerochill.bowverhaul.item.ModItems;
+import net.aerochill.bowverhaul.init.block.custom.WoodworkingTable;
+import net.aerochill.bowverhaul.init.item.ModCreativeModeTab;
+import net.aerochill.bowverhaul.init.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -21,6 +22,8 @@ public class ModBlocks
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Bowverhaul.MOD_ID);
 
     public static final RegistryObject<Block> INFUSION_TABLE = registerBlock("infusion_table", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()), ModCreativeModeTab.BOWVERHAUL_TAB);
+
+    public static final RegistryObject<Block> WOODWORKING_TABLE = registerBlock("woodworking_table", () -> new WoodworkingTable(BlockBehaviour.Properties.of(Material.WOOD).strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.BOWVERHAUL_TAB);
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab)
     {

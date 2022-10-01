@@ -9,20 +9,20 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.network.NetworkHooks;
 
-public class IronTippedArrow extends AbstractArrow
+public class DiamondTippedArrow extends AbstractArrow
 {
 
-    public IronTippedArrow(EntityType<IronTippedArrow> entityType, Level world)
+    public DiamondTippedArrow(EntityType<DiamondTippedArrow> entityType, Level world)
     {
         super(entityType, world);
     }
 
-    public IronTippedArrow(EntityType<IronTippedArrow> entityType, double x, double y, double z, Level world)
+    public DiamondTippedArrow(EntityType<DiamondTippedArrow> entityType, double x, double y, double z, Level world)
     {
         super(entityType, x, y, z, world);
     }
 
-    public IronTippedArrow(EntityType<IronTippedArrow> entityType, LivingEntity shooter, Level world)
+    public DiamondTippedArrow(EntityType<DiamondTippedArrow> entityType, LivingEntity shooter, Level world)
     {
         super(entityType, shooter, world);
     }
@@ -30,7 +30,7 @@ public class IronTippedArrow extends AbstractArrow
     @Override
     public ItemStack getPickupItem()
     {
-        return new ItemStack(ModItems.IRON_TIPPED_ARROW.get());
+        return new ItemStack(ModItems.DIAMOND_TIPPED_ARROW.get());
     }
 
     @Override

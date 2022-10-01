@@ -6,8 +6,8 @@
     "east": "bowverhaul:block/infusion_table_side",
     "north": "bowverhaul:block/infusion_table_front",
     "particle": "bowverhaul:block/infusion_table_front",
-    "south": "bowverhaul:block/infusion_table_side",
+    "south": "bowverhaul:block/infusion_table_front",
     "up": "bowverhaul:block/infusion_table_top",
-    "west": "bowverhaul:block/infusion_table_front"
+    "west": "bowverhaul:block/infusion_table_side"
   }
 }

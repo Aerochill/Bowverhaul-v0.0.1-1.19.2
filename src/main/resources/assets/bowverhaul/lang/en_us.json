@@ -2,13 +2,25 @@
   "itemGroup.bowverhaultab": "Bowverhaul",
 
   "block.bowverhaul.infusion_table": "Infusion Table",
+  "block.bowverhaul.woodworking_table": "Woodworking Table",
 
-  "item.bowverhaul.diamond_tipped_arrow": "Diamond Tipped Arrow",
+  "item.bowverhaul.whittling_knife": "Whittling Knife",
+
+  "item.bowverhaul.oak_bow_limbs": "Oak Bow Limbs",
+
+  "containerbowverhaul.woodworking_table": "Woodworking Table",
+
   "item.bowverhaul.diamond_dust": "Diamond Dust",
   "item.bowverhaul.gold_dust": "Gold Dust",
   "item.bowverhaul.coal_dust": "Coal Dust",
   "item.bowverhaul.copper_dust": "Copper Dust",
   "item.bowverhaul.iron_dust": "Iron Dust",
   "item.bowverhaul.lapis_lazuli_dust": "Lapis Lazuli Dust",
-  "item.bowverhaul.iron_tipped_arrow": "Iron Tipped Arrow"
+
+  "item.bowverhaul.diamond_tipped_arrow": "Diamond Tipped Arrow",
+  "item.bowverhaul.iron_tipped_arrow": "Iron Tipped Arrow",
+  "item.bowverhaul.emerald_tipped_arrow": "Emerald Tipped Arrow",
+  "item.bowverhaul.obsidian_tipped_arrow": "Obsidian Tipped Arrow",
+
+  "effect.bowverhaul.bleed": "Bleed"
 }

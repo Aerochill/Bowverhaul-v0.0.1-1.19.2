@@ -1,4 +1,4 @@
-package net.aerochill.bowverhaul.item;
+package net.aerochill.bowverhaul.init.item;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
